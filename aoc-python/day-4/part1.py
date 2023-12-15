@@ -9,14 +9,8 @@ values = []
 for card in cards:
 	values.append(card[1].split('|'))
 
-winning_numbers = []
-users_numbers = []
 points = []
-
 for i, value in enumerate(values):
-	winning_numbers.append(re.findall( '(\d+)', value[0]))
-	users_numbers.append(re.findall( '(\d+)', value[1]))
-
 	winning_number = set(re.findall( '(\d+)', value[0]))
 	users_number = set( re.findall( '(\d+)', value[1]))
 
