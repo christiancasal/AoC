@@ -12,7 +12,7 @@ for card in cards:
 points = []
 for i, value in enumerate(values):
 	winning_number = set(re.findall( '(\d+)', value[0]))
-	users_number = set( re.findall( '(\d+)', value[1]))
+	users_number = set(re.findall( '(\d+)', value[1]))
 
 	users_winning_number_count = len(winning_number.intersection(users_number))
 
